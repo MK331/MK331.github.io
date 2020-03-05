@@ -1,0 +1,11 @@
+.c1{
+    width: 100%;
+    background-color: darkgray;
+}
+.c2{
+    width: 10%;
+    background-color:darkcyan;
+    text-align: center;
+    color: white;
+    line-height:30px;
+}

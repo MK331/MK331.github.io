@@ -346,6 +346,37 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2020/04/02/%E6%A8%A1%E7%94%B5/" >
+            
+                <span>晶体管放大电路的三种接法</span>
+        </a>
+        <div class="abstract-content">
+            一、基本共集放大电路静态分析\(\left\{\begin{matrix}V_{BB}=I_{BQ}R_{b}+U_{BEQ}+I_{EQ}R_{e}\\V_{CC}=U_{CEQ}+I_{EQ}R_{e}\end{matrix}\right.\)
+\(\therefore I_{BQ}=\frac {V_{BB}-U_{BEQ}} {R_{b}+(1+\beta)R_{e}},I_{EQ}=(1+\beta)I_{BQ},U_{CEQ}=V_{CC}-I_{EQ}R_{e}\)
+动态分析\(\dot{A_{u}}=\frac{\dot{U_{o}}}{\dot{U_{i}}}=\fra...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/04/02</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "资料">资料</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2020/03/05/MiniBlog/" >
             
                 <span class="stick-top iconfont-archer">&#xe63d;</span>
@@ -594,9 +625,24 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 4
+        Total : 5
         </div>
         <!-- search  -->
         
@@ -609,6 +655,11 @@
     
     <div class="archive-year"> 2020 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/02</span><a class="archive-post-title" href= "/2020/04/02/%E6%A8%A1%E7%94%B5/" >晶体管放大电路的三种接法</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -647,6 +698,8 @@
         <span class="sidebar-tag-name" data-tags="MiniBlog"><span class="iconfont-archer">&#xe606;</span>MiniBlog</span>
     
         <span class="sidebar-tag-name" data-tags="备忘录"><span class="iconfont-archer">&#xe606;</span>备忘录</span>
+    
+        <span class="sidebar-tag-name" data-tags="资料"><span class="iconfont-archer">&#xe606;</span>资料</span>
     
         <span class="sidebar-tag-name" data-tags="人文"><span class="iconfont-archer">&#xe606;</span>人文</span>
     
@@ -716,7 +769,22 @@ jsonContent:
     </div>
     <!-- async load share.js -->
      
-    </body>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</body>
 </html>
 
 

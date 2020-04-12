@@ -11,7 +11,7 @@
 
 
 <head>
-    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
     <meta name="author" content="Yagami Jun">
     <meta name="renderer" content="webkit">
@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>⚡变压器的运行原理和主要特性 · Toshokan™ Git</title>
+    <title>Toshokan™ Git</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -198,28 +198,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" defer></script>
     <!-- 百度统计  -->
     
-    <!-- 谷歌统计  --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    <!-- 谷歌统计  -->
     
 </head>
 
     
-        <body class="post-body">
     
-    
-<!-- hexo-inject:begin --><!-- hexo-inject:end --><header class="header">
+<header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
-    
-    <div class="banner">
-            <div class="blog-title">
-                <a href="/" >Yagami&#39;s Toshokan™</a>
-            </div>
-            <div class="post-title">
-                <a href="#" class="post-name">⚡变压器的运行原理和主要特性</a>
-            </div>
-    </div>
     
     <a class="home-link" href=/>Yagami's Toshokan™</a>
 </header>
@@ -231,74 +220,24 @@
 
 
 
-
-height:50vh;
 ">
     
     <!-- 主页  -->
-    
-    
-    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
-            
-            ⚡变压器的运行原理和主要特性
-            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
-            
-            <!-- 404 -->
-            
         </p>
         <!-- 文章页meta -->
-        
-            <div class="post-intros">
-                <!-- 文章页标签  -->
-                
-                    <div class= post-intro-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "资料">资料</a>
-    
-</div>
-                
-                
-                    <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">633</span>阅读时长: <span class="post-count reading-time">3 min</span></span>
-                    </div>
-                
-                <div class="post-intro-meta">
-                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2020/04/06</span>
-                    
-                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
-                        <span class="iconfont-archer">&#xe602;</span>
-                        <span id="busuanzi_value_page_pv"></span>
-                    </span>
-                    
-                    <span class="shareWrapper">
-                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
-                        <span class="shareText">Share</span>
-                        <ul class="shareList">
-                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
-                                <div class="share-qrcode"></div>
-                            </li>
-                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
-                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
-                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
-                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
-                        </ul>
-                    </span>
-                </div>
-            </div>
         
     </div>
 </div>
@@ -399,101 +338,45 @@ height:50vh;
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main post-page">
-    <article class="article-entry">
-        <h2 id="变压器的空载运行"><a href="#变压器的空载运行" class="headerlink" title="#变压器的空载运行"></a>#变压器的空载运行</h2><h3 id="参数"><a href="#参数" class="headerlink" title="参数:"></a>参数:</h3><ul>
-<li>一、二次侧线圈匝数:\(N_1,N_2\)</li>
-<li>一、二次侧电压、电流:\(u_1,u_2,i_1,i_2\)</li>
-<li>一次侧空载电流、励磁电流:\(i_0,i_m\)</li>
-<li>一、二次侧磁通、漏磁\(\phi ,\phi_{1\rho }\)</li>
-</ul>
-<p>由于铁磁材料存在饱和现象，主磁通与建立它的电流之间的关系是非线性的；<br>但漏磁通由于主要沿非铁磁材料闭合，他与电流\(i_0\)保持线性关系。</p>
-<h3 id="基本方程式"><a href="#基本方程式" class="headerlink" title="基本方程式"></a>基本方程式</h3><p>\(e_1 = -N_1 \frac {d\phi } {dt} , e_2 = -N_1 \frac {d\phi } {dt} , e_{1\rho } = -N_{1\rho } \frac {d\phi_{1\rho } } {dt}\)</p>
-<p>\(e_1+e_{1\rho } = i_0r_1-u_1\)<br>\(u_1 = -(e_1+e_{1\rho })+i_0r_1\)</p>
-<p>写成复数形式:<br>\(\dot {U_1} = -(\dot {E_1}+\dot {E_{1\rho }})+\dot {I_0}r_1\)</p>
-<h3 id="电动势与变比"><a href="#电动势与变比" class="headerlink" title="电动势与变比"></a>电动势与变比</h3><p>忽略一次侧电阻压降与漏磁通:\(u_1 = -e_1\)<br>如外施电压按正弦变化，设 \(\phi = \Phi_msin\omega t\)</p>
-<p>\(\Phi_m\)——主磁通最大值<br>\(\omega\)——磁通角频率,\(\omega = 2\pi f\)</p>
-<p>\(\therefore e_1 = -N_1\frac {d\phi} {dt} = -\omega N_1\Phi_m cos\omega t =E_{1m}sin(\omega t - 90^{\circ}) \)<br>\(\therefore E_1 = \frac {E_{1m}} {\sqrt {2}} = 4.44fN_1\Phi_m,\dot {E_1} = -j4.44fN_1\dot {\Phi}_m\)<br>同理 \(E_2 = \frac {E_{2m}} {\sqrt {2}} = 4.44fN_2\Phi_m,\dot {E_2} = -j4.44fN_2\dot {\Phi}_m\)</p>
-<h3 id="关于漏磁的计算"><a href="#关于漏磁的计算" class="headerlink" title="关于漏磁的计算"></a>关于漏磁的计算</h3><p>\(\psi_{1\rho } = N_1\phi_{1\rho } = L_{1\rho }i_0\)</p>
-<p>由上可得，由于漏磁通不饱和，可以认为\(\phi_{1\rho }\)和\(i_0\)成正比，因此一次侧的漏磁电感为常数。</p>
-<p>\(e_{1\rho} = -N_1\frac {d\phi_{1\rho}}{dt} = -L_{1\rho}\frac {di_0}{dt}\Rightarrow -\dot {E_{1\rho}} = -j\omega L_{1\rho}\dot {I}_0 = -jx_{1\rho}\dot{I}_0\)<br>\(\therefore \dot {U_1} = (-\dot {E_1})+j\dot{I}_0x_{1\rho}+\dot{I}_0r_1=(-\dot{E}_1)+\dot{I}_0Z_1\Rightarrow \dot{U}_1\approx (-\dot{E}_1)\)</p>
-<h2 id="变压器的负载运行"><a href="#变压器的负载运行" class="headerlink" title="#变压器的负载运行"></a>#变压器的负载运行</h2><h3 id="追加参数"><a href="#追加参数" class="headerlink" title="追加参数"></a>追加参数</h3><ul>
-<li>一、二次侧磁动势、合成磁动势:\(\dot{F}_0 = \dot{I}_0N_1,\dot{F}_2 = \dot{I}_2N_2,\dot {F}_m = \dot {I}_1N_1+\dot {I}_2N_2\)</li>
-<li>一、二次侧漏磁通，感应漏磁电动势:\(-\dot{E}_{1\rho}=jx_{1\rho}\dot {I}_1,-\dot{E}_{2\rho}=jx_{2\rho}\dot{I}-2\)</li>
-</ul>
-<p>\(\dot{U}_1 = (-\dot{E}_1)+\dot{I}_1Z_1,\dot{U}_2 = \dot{E}_2-\dot{I}_2Z_2\)</p>
-<h3 id="磁动势平衡方程"><a href="#磁动势平衡方程" class="headerlink" title="磁动势平衡方程"></a>磁动势平衡方程</h3><ul>
-<li>\(\dot{F}_1+\dot{F}_2 = \dot{F}_m\)</li>
-</ul>
-<p>\(\therefore \dot{I}_1 = \dot{I}_m+(-\dot{I}_2\frac {N_2}{N_1}) = \dot {I}_m+\dot{I}_{1L}\)</p>
-<p>其中\(I_{1L}\)为负载分量，当\(I_m\)可以忽略时，\(I_1\approx I_{1L}\)，有\(\frac {I_1}{I_2}\approx \frac {1}{k}\)</p>
-<p>变压器运行时，二次侧的电压取决于一次侧的电压。输出电流、功率和功率因数取决于二次侧所接的负载，而一次侧的输入电流、功率和功率因数则取决于二次侧的对应量。</p>
-
-    </article>
-    <!-- license  -->
+            <main class="main index-page">
     
-        <div class="license-wrapper">
-            <p>原文作者：<a href="http://toshokan.ga">Yagami Jun</a>
-            <p>原文链接：<a href="http://toshokan.ga/2020/04/06/%E5%8F%98%E5%8E%8B%E5%99%A8/">http://toshokan.ga/2020/04/06/%E5%8F%98%E5%8E%8B%E5%99%A8/</a>
-            <p>发表日期：<a href="http://toshokan.ga/2020/04/06/%E5%8F%98%E5%8E%8B%E5%99%A8/">April 6th 2020, 1:28:40 pm</a>
-            <p>更新日期：<a href="http://toshokan.ga/2020/04/06/%E5%8F%98%E5%8E%8B%E5%99%A8/">April 6th 2020, 2:48:29 pm</a>
-            <p>版权声明：本文采用<a rel="license noopener" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2020/03/04/homework/" >
+            
+                <span class="stick-top iconfont-archer">&#xe63d;</span>
+                
+                <span>[置顶]作业备忘录📝</span>
+        </a>
+        <div class="abstract-content">
+            2/3/2019-30/3/2019
         </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/03/04</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "备忘录">备忘录</a>
+    
+</div>
+            
+        </div>
+    </article>
     
     <!-- paginator  -->
-    <ul class="post-paginator">
-        <li class="next">
-            
-                <div class="nextSlogan">Next Post</div>
-                <a href= "/2020/04/06/%E5%8F%98%E5%8E%8B%E5%99%A8%E7%AD%89%E6%95%88%E7%94%B5%E8%B7%AF/" title= "⚡变压器等效电路">
-                    <div class="nextTitle">⚡变压器等效电路</div>
-                </a>
-            
-        </li>
-        <li class="previous">
-            
-                <div class="prevSlogan">Previous Post</div>
-                <a href= "/2020/04/02/%E6%A8%A1%E7%94%B5/" title= "💡晶体管放大电路的三种接法">
-                    <div class="prevTitle">💡晶体管放大电路的三种接法</div>
-                </a>
-            
-        </li>
-    </ul>
-    <!-- 评论插件 -->
-    <!-- 来必力City版安装代码 -->
-
-<!-- City版安装代码已完成 -->
     
-    <div id="disqus_thread"></div>
-    <script>
-        /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-        
-        var disqus_config = function () {
-        this.page.url = "http://toshokan.ga/2020/04/06/%E5%8F%98%E5%8E%8B%E5%99%A8/";  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = "⚡变压器的运行原理和主要特性"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-        
-        (function () { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://mk331.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        })();
-
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
-
+    <nav class="page-nav">
+        <a class="extend prev" rel="prev" href="/archives/2020/">&amp;#60; PREV</a><a class="page-number" href="/archives/2020/">1</a><span class="page-number current">2</span>
+    </nav>
     
-    <!-- partial('_partial/comment/changyan') -->
-    <!--PC版-->
-
-
-    
-    
-
-    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -583,24 +466,6 @@ height:50vh;
 </footer>
     </div>
     <!-- toc -->
-    
-    <div class="toc-wrapper" style=
-    
-
-
-
-
-
-
-
-top:50vh;
-
-    >
-        <div class="toc-catalog">
-            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
-        </div>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#变压器的空载运行"><span class="toc-number">1.</span> <span class="toc-text">#变压器的空载运行</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#参数"><span class="toc-number">1.1.</span> <span class="toc-text">参数:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#基本方程式"><span class="toc-number">1.2.</span> <span class="toc-text">基本方程式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#电动势与变比"><span class="toc-number">1.3.</span> <span class="toc-text">电动势与变比</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关于漏磁的计算"><span class="toc-number">1.4.</span> <span class="toc-text">关于漏磁的计算</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#变压器的负载运行"><span class="toc-number">2.</span> <span class="toc-text">#变压器的负载运行</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#追加参数"><span class="toc-number">2.1.</span> <span class="toc-text">追加参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#磁动势平衡方程"><span class="toc-number">2.2.</span> <span class="toc-text">磁动势平衡方程</span></a></li></ol></li></ol>
-    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -727,9 +592,35 @@ top:50vh;
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 11
+        Total : 13
         </div>
         <!-- search  -->
         
@@ -745,37 +636,47 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/09</span><a class="archive-post-title" href= "/2020/04/09/%E7%BA%BF%E6%80%A7%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%A8%B3%E6%80%81%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90/" >🚗线性控制系统的稳态性能分析</a>
+            <span class="archive-post-date">04/12</span><a class="archive-post-title" href= "/2020/04/12/erjiesyfx/" >🚗二阶系统的时域分析</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/07</span><a class="archive-post-title" href= "/2020/04/07/%E5%B8%B8%E7%94%A8%E6%8B%89%E6%B0%8F%E5%8F%98%E6%8D%A2%E5%AF%B9%E7%85%A7%E8%A1%A8/" >🚗常用拉氏变换对照表</a>
+            <span class="archive-post-date">04/12</span><a class="archive-post-title" href= "/2020/04/12/syfx/" >🚗线性控制系统的时域分析法概览</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/07</span><a class="archive-post-title" href= "/2020/04/07/%E7%BA%BF%E6%80%A7%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%A8%B3%E5%AE%9A%E6%80%A7%E5%88%86%E6%9E%90/" >🚗线性控制系统的稳定性分析</a>
+            <span class="archive-post-date">04/09</span><a class="archive-post-title" href= "/2020/04/09/wdxnfx/" >🚗线性控制系统的稳态性能分析</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/07</span><a class="archive-post-title" href= "/2020/04/07/%E4%B8%89%E7%9B%B8%E5%8F%98%E5%8E%8B%E5%99%A8/" >⚡三相变压器</a>
+            <span class="archive-post-date">04/07</span><a class="archive-post-title" href= "/2020/04/07/lap/" >📝常用拉氏变换对照表</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/06</span><a class="archive-post-title" href= "/2020/04/06/%E5%8F%98%E5%8E%8B%E5%99%A8%E7%AD%89%E6%95%88%E7%94%B5%E8%B7%AF/" >⚡变压器等效电路</a>
+            <span class="archive-post-date">04/07</span><a class="archive-post-title" href= "/2020/04/07/wdxfx/" >🚗线性控制系统的稳定性分析</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/06</span><a class="archive-post-title" href= "/2020/04/06/%E5%8F%98%E5%8E%8B%E5%99%A8/" >⚡变压器的运行原理和主要特性</a>
+            <span class="archive-post-date">04/07</span><a class="archive-post-title" href= "/2020/04/07/sxbyq/" >⚡三相变压器</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">04/02</span><a class="archive-post-title" href= "/2020/04/02/%E6%A8%A1%E7%94%B5/" >💡晶体管放大电路的三种接法</a>
+            <span class="archive-post-date">04/06</span><a class="archive-post-title" href= "/2020/04/06/byqdxdl/" >⚡变压器等效电路</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/06</span><a class="archive-post-title" href= "/2020/04/06/byq/" >⚡变压器的运行原理和主要特性</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/02</span><a class="archive-post-title" href= "/2020/04/02/md/" >💡晶体管放大电路的三种接法</a>
         </li>
     
     
@@ -799,12 +700,12 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">11/24</span><a class="archive-post-title" href= "/2019/11/24/%E5%90%8E%E9%99%A2%E5%A4%87%E5%BF%98%E5%BD%95/" >后院备忘录</a>
+            <span class="archive-post-date">11/24</span><a class="archive-post-title" href= "/2019/11/24/nekoatsume/" >后院备忘录</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">11/04</span><a class="archive-post-title" href= "/2019/11/04/%E6%96%B0%E5%BA%97%E5%BC%80%E5%BC%A0/" >新店开张</a>
+            <span class="archive-post-date">11/04</span><a class="archive-post-title" href= "/2019/11/04/helloworld/" >新店开张</a>
         </li>
     
     </div>
@@ -812,9 +713,9 @@ top:50vh;
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
-        <span class="sidebar-tag-name" data-tags="MiniBlog"><span class="iconfont-archer">&#xe606;</span>MiniBlog</span>
-    
         <span class="sidebar-tag-name" data-tags="资料"><span class="iconfont-archer">&#xe606;</span>资料</span>
+    
+        <span class="sidebar-tag-name" data-tags="MiniBlog"><span class="iconfont-archer">&#xe606;</span>MiniBlog</span>
     
         <span class="sidebar-tag-name" data-tags="备忘录"><span class="iconfont-archer">&#xe606;</span>备忘录</span>
     
@@ -887,9 +788,6 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
-    
-        <script src="/scripts/share.js" async></script>
-		<script src="src\js\jsp.js"></script>	
      
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -905,7 +803,7 @@ jsonContent:
             all[i].SourceElement().parentNode.className += ' has-jax';
     });
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 </html>
 

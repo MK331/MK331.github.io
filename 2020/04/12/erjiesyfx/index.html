@@ -272,7 +272,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">419</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">940</span>阅读时长: <span class="post-count reading-time">4 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -401,7 +401,7 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <h3 id="二阶系统的数学模型"><a href="#二阶系统的数学模型" class="headerlink" title="二阶系统的数学模型"></a>二阶系统的数学模型</h3><p><strong>(1)典型二阶系统的数学模型</strong></p>
+        <h3 id="一、二阶系统的数学模型"><a href="#一、二阶系统的数学模型" class="headerlink" title="一、二阶系统的数学模型"></a>一、二阶系统的数学模型</h3><p><strong>(1)典型二阶系统的数学模型</strong></p>
 <p><img src="/images/chrome_SIjVngVILT.png" alt=""></p>
 <p>\(\Phi(s)=\frac{C(s)}{R(s)}=\frac{\omega_n^2}{s^2+2\xi\omega_ns+\omega_n^2}\)</p>
 <p>其中，\(\xi\)为阻尼比；\(\omega_n\)为无阻尼自然振荡频率。</p>
@@ -416,7 +416,7 @@ height:50vh;
 <p><strong>7.负阻尼(\(\xi\)&lt;-1)</strong>：两个不同的正实根</p>
 <p><img src="/images/chrome_WTZ2M4C31H.png" alt=""></p>
 <p><strong>总结</strong>：阻尼大于1时，系统无振荡</p>
-<h3 id="二阶系统的单位阶跃响应"><a href="#二阶系统的单位阶跃响应" class="headerlink" title="二阶系统的单位阶跃响应"></a>二阶系统的单位阶跃响应</h3><p><strong>(1)欠阻尼</strong></p>
+<h3 id="二、二阶系统的单位阶跃响应"><a href="#二、二阶系统的单位阶跃响应" class="headerlink" title="二、二阶系统的单位阶跃响应"></a>二、二阶系统的单位阶跃响应</h3><p><strong>(1)欠阻尼</strong></p>
 <p>\(c(t)=1-\frac{e^{-\xi\omega_n t}}{\sqrt{1-\xi^2}}(\sqrt{1-\xi^2}cos\omega_dt+\xi sin\omega_dt)=1-\frac{e^{-\xi\omega_nt}}{\sqrt{1-\xi^2}}sin(\omega_dt+\theta)\)</p>
 <p>其中\(\omega_d=\omega_n\sqrt{1-\xi^2}\)为有阻尼振荡频率。<br>\(\theta=arctan\frac{\sqrt{1-\xi^2}}{\xi}\)</p>
 <p><strong>(2)无阻尼</strong></p>
@@ -427,6 +427,38 @@ height:50vh;
 <p>\(c(t)=1-e^{-(\xi\omega_n-\omega_n\sqrt{\xi^2-1})t}\)</p>
 <p><img src="/images/chrome_3K0ANcdye3.png" alt=""></p>
 <p>总结：阻尼比越小，超调量越大，上升时间越短，振荡特性越强。阻尼比越大，超调量越小，上升时间越长，振荡特性越弱。一般阻尼比选在0.4~0.8。</p>
+<h3 id="三、欠阻尼二阶系统的动态性能指标"><a href="#三、欠阻尼二阶系统的动态性能指标" class="headerlink" title="三、欠阻尼二阶系统的动态性能指标"></a>三、欠阻尼二阶系统的动态性能指标</h3><p><strong>(1)上升时间</strong></p>
+<p>\(t_r=\frac{\pi -\theta}{\omega_d}=\frac{\pi-\theta}{\omega_n\sqrt{1-\xi^2}}\)</p>
+<p><strong>(2)峰值时间</strong></p>
+<p>\(t_p=\frac{\pi}{\omega_d}=\frac{\pi}{\omega_n\sqrt{1-\xi^2}}\)</p>
+<p><strong>(3)最大超调量</strong></p>
+<p>\(\sigma_p=e^{-\pi cot\theta}\times 100\% =e^{-\pi\frac{\xi \pi}{\sqrt{1-\xi^2}}}\times 100\%\)</p>
+<p>最大超调量只与阻尼比有关。</p>
+<p><strong>(4)调节时间</strong></p>
+<p>\(t_s=\frac{3}{\xi\omega_n}(\Delta=5\%)\)<br>\(t_s=\frac{4}{\xi\omega_n}(\Delta=2\%)\)</p>
+<p>调节时间与闭环极点的实部成反比。闭环极点距虚轴距离越远，系统调节时间越短。由于阻尼比主要根据系统超调量的要求来确定，所以调节时间主要由无阻尼自然振荡频率决定。在不改变最大超调量的情况下，通过无阻尼自然振荡频率可以改变系控制系统的快速性。</p>
+<p><strong>(5)振荡次数</strong></p>
+<p>\(N=\frac{1.5\sqrt{1-\xi^2}}{\pi\xi}(\Delta=5\%)\)<br>\(N=\frac{2\sqrt{1-\xi^2}}{\pi\xi}(\Delta=2\%)\)</p>
+<p>若已知\(\sigma_p=e^{-\frac{\xi\pi}{\sqrt{1-\xi^2}}}\)</p>
+<p>则\(ln\sigma_p=-\frac{\pi\xi}{\sqrt{1-\xi^2}}\)</p>
+<p>\(N=\frac{-1.5}{ln\sigma_p}(\Delta=5\%)\)<br>\(N=\frac{-2}{ln\sigma_p}(\Delta=2\%)\)</p>
+<p>震荡次数只与阻尼比有关。</p>
+<h3 id="二阶系统的单位脉冲响应"><a href="#二阶系统的单位脉冲响应" class="headerlink" title="二阶系统的单位脉冲响应"></a>二阶系统的单位脉冲响应</h3><p><strong>(1)欠阻尼</strong></p>
+<p>\(c(t)=\frac{\omega_n}{\sqrt{1-\xi^2}}e^{-\xi\omega_nt}sin(\omega_n\sqrt{1-\xi^2}t)\)</p>
+<p><strong>(2)无阻尼</strong></p>
+<p>\(c(t)=\omega_nsin(\omega_nt)\)</p>
+<p><strong>(2)临界阻尼</strong></p>
+<p>\(c(t)=\omega_n^2te^{-\omega_nt}\)</p>
+<p><strong>(3)过阻尼</strong></p>
+<p>\(c(t)=\frac{\omega_n}{2\sqrt{\xi^2-1}}[e^{-(\xi-\sqrt{\xi^2-1})\omega_nt}-e^{-(\xi+\sqrt{\xi^2-1})\omega_nt}]\)</p>
+<p><img src="/images/chrome_D7YO3iyFgn.png" alt=""></p>
+<p>\(t_{p2}=\frac{arctan\frac{\sqrt{1-\xi^2}}{\xi}}{\omega_n\sqrt{1-\xi^2}}\)<br>\(\sigma_{p2}=\omega_ne^{-\frac{\xi}{\sqrt{1-\xi^2}}arctan\sqrt{\frac{1-\xi^2}{\xi}}}\)<br>\(t_2=\frac{\pi}{\omega_n\sqrt{1-\xi^2}}\)</p>
+<h3 id="二阶系统的单位斜坡响应"><a href="#二阶系统的单位斜坡响应" class="headerlink" title="二阶系统的单位斜坡响应"></a>二阶系统的单位斜坡响应</h3><p><strong>(1)欠阻尼</strong></p>
+<p>\(c(t)=t-\frac{2\xi}{\omega_n}+\frac{e^{-\xi\omega_nt}}{\omega_d}sin(\omega_dt+2\theta)\)</p>
+<p><strong>(2)临界阻尼</strong></p>
+<p>\(c(t)=t-\frac{2}{\omega_n}+\frac{2}{\omega_n}(1+\frac{1}{2}\omega_nt)e^{-\omega_nt}\)</p>
+<p><strong>(3)过阻尼</strong></p>
+<p>\(c(t)=t-\frac{2\xi}{\omega_n}+\frac{2\xi^2-1-2\xi\sqrt{\xi^2-1}}{2\omega_n\sqrt{\xi^2-1}}e^{-(\xi+\sqrt{\xi^2-1})\omega_nt}+\frac{2\xi^2-1+2\xi\sqrt{\xi^2-1}}{2\omega_n\sqrt{\xi^2-1}}e^{-(\xi-\sqrt{\xi^2-1})\omega_nt}\)</p>
 
     </article>
     <!-- license  -->
@@ -435,7 +467,7 @@ height:50vh;
             <p>原文作者：<a href="http://toshokan.ga">Yagami Jun</a>
             <p>原文链接：<a href="http://toshokan.ga/2020/04/12/erjiesyfx/">http://toshokan.ga/2020/04/12/erjiesyfx/</a>
             <p>发表日期：<a href="http://toshokan.ga/2020/04/12/erjiesyfx/">April 12th 2020, 4:40:33 pm</a>
-            <p>更新日期：<a href="http://toshokan.ga/2020/04/12/erjiesyfx/">April 12th 2020, 8:50:51 pm</a>
+            <p>更新日期：<a href="http://toshokan.ga/2020/04/12/erjiesyfx/">April 13th 2020, 9:05:30 am</a>
             <p>版权声明：本文采用<a rel="license noopener" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -593,7 +625,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#二阶系统的数学模型"><span class="toc-number">1.</span> <span class="toc-text">二阶系统的数学模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二阶系统的单位阶跃响应"><span class="toc-number">2.</span> <span class="toc-text">二阶系统的单位阶跃响应</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、二阶系统的数学模型"><span class="toc-number">1.</span> <span class="toc-text">一、二阶系统的数学模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、二阶系统的单位阶跃响应"><span class="toc-number">2.</span> <span class="toc-text">二、二阶系统的单位阶跃响应</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、欠阻尼二阶系统的动态性能指标"><span class="toc-number">3.</span> <span class="toc-text">三、欠阻尼二阶系统的动态性能指标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二阶系统的单位脉冲响应"><span class="toc-number">4.</span> <span class="toc-text">二阶系统的单位脉冲响应</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二阶系统的单位斜坡响应"><span class="toc-number">5.</span> <span class="toc-text">二阶系统的单位斜坡响应</span></a></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
@@ -606,8 +638,6 @@ top:50vh;
     <div class="sidebar-content sidebar-content-show-archive">
           <div class="sidebar-panel-archives">
     <!-- 在ejs中将archive按照时间排序 -->
-    
-    
     
     
     
@@ -842,13 +872,13 @@ top:50vh;
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
-        <span class="sidebar-tag-name" data-tags="资料"><span class="iconfont-archer">&#xe606;</span>资料</span>
-    
         <span class="sidebar-tag-name" data-tags="MiniBlog"><span class="iconfont-archer">&#xe606;</span>MiniBlog</span>
     
-        <span class="sidebar-tag-name" data-tags="备忘录"><span class="iconfont-archer">&#xe606;</span>备忘录</span>
+        <span class="sidebar-tag-name" data-tags="资料"><span class="iconfont-archer">&#xe606;</span>资料</span>
     
         <span class="sidebar-tag-name" data-tags="人文"><span class="iconfont-archer">&#xe606;</span>人文</span>
+    
+        <span class="sidebar-tag-name" data-tags="备忘录"><span class="iconfont-archer">&#xe606;</span>备忘录</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
@@ -919,24 +949,9 @@ jsonContent:
     <!-- async load share.js -->
     
         <script src="/scripts/share.js" async></script>
-		<script src="src\js\jsp.js"></script>	
+		<script src="src\js\jsp.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->	
      
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
-</body>
+    </body>
 </html>
 
 

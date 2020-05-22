@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Yagami&#39;s Toshokan™</title>
+  
+  <subtitle>Github branch of toshokan.top .</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://voiletoshokan.tk/"/>
+  <updated>2020-05-22T04:42:07.197Z</updated>
+  <id>http://voiletoshokan.tk/</id>
+  
+  <author>
+    <name>Yagami Jun</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[置顶]短消息电台📺</title>
+    <link href="http://voiletoshokan.tk/2020/03/05/MiniBlog/"/>
+    <id>http://voiletoshokan.tk/2020/03/05/MiniBlog/</id>
+    <published>2020-03-05T03:23:13.000Z</published>
+    <updated>2020-05-22T04:42:07.197Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="MiniBlog" scheme="http://voiletoshokan.tk/tags/MiniBlog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NekoAtsume游戏数据</title>
+    <link href="http://voiletoshokan.tk/2019/11/24/nekoatsume/"/>
+    <id>http://voiletoshokan.tk/2019/11/24/nekoatsume/</id>
+    <published>2019-11-24T09:36:30.000Z</published>
+    <updated>2020-05-22T09:01:29.501Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="备忘录" scheme="http://voiletoshokan.tk/tags/%E5%A4%87%E5%BF%98%E5%BD%95/"/>
+    
+      <category term="游戏" scheme="http://voiletoshokan.tk/tags/%E6%B8%B8%E6%88%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>新店开张</title>
+    <link href="http://voiletoshokan.tk/2019/11/04/helloworld/"/>
+    <id>http://voiletoshokan.tk/2019/11/04/helloworld/</id>
+    <published>2019-11-04T14:36:30.000Z</published>
+    <updated>2020-05-22T06:38:21.513Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="人文" scheme="http://voiletoshokan.tk/tags/%E4%BA%BA%E6%96%87/"/>
+    
+  </entry>
+  
+</feed>

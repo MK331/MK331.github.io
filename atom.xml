@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://voiletoshokan.tk/"/>
-  <updated>2020-05-22T04:42:07.197Z</updated>
+  <updated>2020-05-25T07:09:51.863Z</updated>
   <id>http://voiletoshokan.tk/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>🚗二阶系统的时域分析</title>
+    <link href="http://voiletoshokan.tk/2020/04/12/erjiesyfx/"/>
+    <id>http://voiletoshokan.tk/2020/04/12/erjiesyfx/</id>
+    <published>2020-04-12T08:40:33.000Z</published>
+    <updated>2020-05-25T07:09:51.863Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="专业" scheme="http://voiletoshokan.tk/categories/%E4%B8%93%E4%B8%9A/"/>
+    
+    
+      <category term="资料" scheme="http://voiletoshokan.tk/tags/%E8%B5%84%E6%96%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>📝常用拉氏变换对照表</title>
+    <link href="http://voiletoshokan.tk/2020/04/07/lap/"/>
+    <id>http://voiletoshokan.tk/2020/04/07/lap/</id>
+    <published>2020-04-07T05:14:29.000Z</published>
+    <updated>2020-05-26T13:33:47.149Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="专业" scheme="http://voiletoshokan.tk/categories/%E4%B8%93%E4%B8%9A/"/>
+    
+    
+      <category term="资料" scheme="http://voiletoshokan.tk/tags/%E8%B5%84%E6%96%99/"/>
+    
+  </entry>
   
   <entry>
     <title>[置顶]短消息电台📺</title>

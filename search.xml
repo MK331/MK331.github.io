@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>🚗二阶系统的时域分析</title>
+      <link href="/2020/04/12/erjiesyfx/"/>
+      <url>/2020/04/12/erjiesyfx/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="一、二阶系统的数学模型"><a href="#一、二阶系统的数学模型" class="headerlink" title="一、二阶系统的数学模型"></a>一、二阶系统的数学模型</h3><p><strong>(1)典型二阶系统的数学模型</strong></p><p><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="/images/chrome_SIjVngVILT.png" alt=""></p><p>\(\Phi(s)=\frac{C(s)}{R(s)}=\frac{\omega_n^2}{s^2+2\xi\omega_ns+\omega_n^2}\)</p><p>其中，\(\xi\)为阻尼比；\(\omega_n\)为无阻尼自然振荡频率。</p><p>令闭环传递函数的分母多项式等于零，可得二阶系统的闭环特征方程<br>\(s^2+2\xi\omega_ns+\omega_n^2=0\)<br>可得二阶系统的两个特征根（即闭环极点）</p><p><strong>(2)阻尼比不同时典型二阶系统的特征根</strong></p><p><strong>1.过阻尼(\(\xi\)&gt;1)</strong>：两个不同的负实根</p><p><strong>2.临界阻尼(\(\xi\)=1)</strong>：相同的负实根</p><p><strong>3.欠阻尼(0&lt;\(\xi\)&lt;1)</strong>：左半平面上的一对共轭复根</p><p><strong>4.无阻尼(\(\xi\)=0)</strong>：虚轴上的一对共轭复根</p><p><strong>5.负阻尼(-1&lt;\(\xi\)&lt;0)</strong>：右半平面上的一对共轭复根</p><p><strong>6.负阻尼(\(\xi\)=-1)</strong>：相同的正实根</p><p><strong>7.负阻尼(\(\xi\)&lt;-1)</strong>：两个不同的正实根</p><p><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="/images/chrome_WTZ2M4C31H.png" alt=""></p><p><strong>总结</strong>：阻尼大于1时，系统无振荡</p><h3 id="二、二阶系统的单位阶跃响应"><a href="#二、二阶系统的单位阶跃响应" class="headerlink" title="二、二阶系统的单位阶跃响应"></a>二、二阶系统的单位阶跃响应</h3><p><strong>(1)欠阻尼</strong></p><p>\(c(t)=1-\frac{e^{-\xi\omega_n t}}{\sqrt{1-\xi^2}}(\sqrt{1-\xi^2}cos\omega_dt+\xi sin\omega_dt)=1-\frac{e^{-\xi\omega_nt}}{\sqrt{1-\xi^2}}sin(\omega_dt+\theta)\)</p><p>其中\(\omega_d=\omega_n\sqrt{1-\xi^2}\)为有阻尼振荡频率。<br>\(\theta=arctan\frac{\sqrt{1-\xi^2}}{\xi}\)</p><p><strong>(2)无阻尼</strong></p><p>\(c(t)=1-cos\omega_nt\)</p><p><strong>(2)临界阻尼</strong></p><p>\(c(t)=1-e^{-\omega_nt}(1+\omega_nt)\)</p><p><strong>(3)过阻尼</strong></p><p>\(c(t)=1-e^{-(\xi\omega_n-\omega_n\sqrt{\xi^2-1})t}\)</p><p><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="/images/chrome_3K0ANcdye3.png" alt=""></p><p>总结：阻尼比越小，超调量越大，上升时间越短，振荡特性越强。阻尼比越大，超调量越小，上升时间越长，振荡特性越弱。一般阻尼比选在0.4~0.8。</p><h3 id="三、欠阻尼二阶系统的动态性能指标"><a href="#三、欠阻尼二阶系统的动态性能指标" class="headerlink" title="三、欠阻尼二阶系统的动态性能指标"></a>三、欠阻尼二阶系统的动态性能指标</h3><p><strong>(1)上升时间</strong></p><p>\(t_r=\frac{\pi -\theta}{\omega_d}=\frac{\pi-\theta}{\omega_n\sqrt{1-\xi^2}}\)</p><p><strong>(2)峰值时间</strong></p><p>\(t_p=\frac{\pi}{\omega_d}=\frac{\pi}{\omega_n\sqrt{1-\xi^2}}\)</p><p><strong>(3)最大超调量</strong></p><p>\(\sigma_p=e^{-\pi cot\theta}\times 100\% =e^{-\pi\frac{\xi \pi}{\sqrt{1-\xi^2}}}\times 100\%\)</p><p>最大超调量只与阻尼比有关。</p><p><strong>(4)调节时间</strong></p><p>\(t_s=\frac{3}{\xi\omega_n}(\Delta=5\%)\)<br>\(t_s=\frac{4}{\xi\omega_n}(\Delta=2\%)\)</p><p>调节时间与闭环极点的实部成反比。闭环极点距虚轴距离越远，系统调节时间越短。由于阻尼比主要根据系统超调量的要求来确定，所以调节时间主要由无阻尼自然振荡频率决定。在不改变最大超调量的情况下，通过无阻尼自然振荡频率可以改变系控制系统的快速性。</p><p><strong>(5)振荡次数</strong></p><p>\(N=\frac{1.5\sqrt{1-\xi^2}}{\pi\xi}(\Delta=5\%)\)<br>\(N=\frac{2\sqrt{1-\xi^2}}{\pi\xi}(\Delta=2\%)\)</p><p>若已知\(\sigma_p=e^{-\frac{\xi\pi}{\sqrt{1-\xi^2}}}\)</p><p>则\(ln\sigma_p=-\frac{\pi\xi}{\sqrt{1-\xi^2}}\)</p><p>\(N=\frac{-1.5}{ln\sigma_p}(\Delta=5\%)\)<br>\(N=\frac{-2}{ln\sigma_p}(\Delta=2\%)\)</p><p>震荡次数只与阻尼比有关。</p><h3 id="二阶系统的单位脉冲响应"><a href="#二阶系统的单位脉冲响应" class="headerlink" title="二阶系统的单位脉冲响应"></a>二阶系统的单位脉冲响应</h3><p><strong>(1)欠阻尼</strong></p><p>\(c(t)=\frac{\omega_n}{\sqrt{1-\xi^2}}e^{-\xi\omega_nt}sin(\omega_n\sqrt{1-\xi^2}t)\)</p><p><strong>(2)无阻尼</strong></p><p>\(c(t)=\omega_nsin(\omega_nt)\)</p><p><strong>(2)临界阻尼</strong></p><p>\(c(t)=\omega_n^2te^{-\omega_nt}\)</p><p><strong>(3)过阻尼</strong></p><p>\(c(t)=\frac{\omega_n}{2\sqrt{\xi^2-1}}[e^{-(\xi-\sqrt{\xi^2-1})\omega_nt}-e^{-(\xi+\sqrt{\xi^2-1})\omega_nt}]\)</p><p><img src= data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs= data-src="/images/chrome_D7YO3iyFgn.png" alt=""></p><p>\(t_{p2}=\frac{arctan\frac{\sqrt{1-\xi^2}}{\xi}}{\omega_n\sqrt{1-\xi^2}}\)<br>\(\sigma_{p2}=\omega_ne^{-\frac{\xi}{\sqrt{1-\xi^2}}arctan\sqrt{\frac{1-\xi^2}{\xi}}}\)<br>\(t_2=\frac{\pi}{\omega_n\sqrt{1-\xi^2}}\)</p><h3 id="二阶系统的单位斜坡响应"><a href="#二阶系统的单位斜坡响应" class="headerlink" title="二阶系统的单位斜坡响应"></a>二阶系统的单位斜坡响应</h3><p><strong>(1)欠阻尼</strong></p><p>\(c(t)=t-\frac{2\xi}{\omega_n}+\frac{e^{-\xi\omega_nt}}{\omega_d}sin(\omega_dt+2\theta)\)</p><p><strong>(2)临界阻尼</strong></p><p>\(c(t)=t-\frac{2}{\omega_n}+\frac{2}{\omega_n}(1+\frac{1}{2}\omega_nt)e^{-\omega_nt}\)</p><p><strong>(3)过阻尼</strong></p><p>\(c(t)=t-\frac{2\xi}{\omega_n}+\frac{2\xi^2-1-2\xi\sqrt{\xi^2-1}}{2\omega_n\sqrt{\xi^2-1}}e^{-(\xi+\sqrt{\xi^2-1})\omega_nt}+\frac{2\xi^2-1+2\xi\sqrt{\xi^2-1}}{2\omega_n\sqrt{\xi^2-1}}e^{-(\xi-\sqrt{\xi^2-1})\omega_nt}\)</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 专业 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 资料 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>📝常用拉氏变换对照表</title>
+      <link href="/2020/04/07/lap/"/>
+      <url>/2020/04/07/lap/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div class="table-container"><table><thead><tr><th style="text-align:center">序号</th><th style="text-align:center">\(f(x)\)</th><th style="text-align:center">\(F(s)\)</th></tr></thead><tbody><tr><td style="text-align:center">1</td><td style="text-align:center">\(\delta (t)\)</td><td style="text-align:center">\(1\)</td></tr><tr><td style="text-align:center">2</td><td style="text-align:center">\(1(t)\)</td><td style="text-align:center">\(\frac{1}{s}\)</td></tr><tr><td style="text-align:center">3</td><td style="text-align:center">\(t\)</td><td style="text-align:center">\(\frac{1}{s^2}\)</td></tr><tr><td style="text-align:center">4</td><td style="text-align:center">\(e^{-at}\)</td><td style="text-align:center">\(\frac{1}{s+a}\)</td></tr><tr><td style="text-align:center">5</td><td style="text-align:center">\(te^{-at}\)</td><td style="text-align:center">\(\frac{1}{(s+a)^2}\)</td></tr><tr><td style="text-align:center">6</td><td style="text-align:center">\(sin\omega t\)</td><td style="text-align:center">\(\frac{\omega}{s^2+\omega^2}\)</td></tr><tr><td style="text-align:center">7</td><td style="text-align:center">\(cos\omega t\)</td><td style="text-align:center">\(\frac{s^2}{s^2+\omega^2}\)</td></tr><tr><td style="text-align:center">8</td><td style="text-align:center">\(t^n(n=1,2,3,…)\)</td><td style="text-align:center">\(\frac{n!}{s^{n+1}}\)</td></tr><tr><td style="text-align:center">9</td><td style="text-align:center">\(t^ne^{-at}(n=1,2,3,…)\)</td><td style="text-align:center">\(\frac{n!}{(s+a)^{n+1}}\)</td></tr><tr><td style="text-align:center">10</td><td style="text-align:center">\(\frac{1}{b-a}(e^{-at}-e^{-bt})\)</td><td style="text-align:center">\(\frac{1}{(s+a)(s+b)}\)</td></tr><tr><td style="text-align:center">11</td><td style="text-align:center">\(\frac{1}{b-a}(be^{-bt}-ae^{-at})\)</td><td style="text-align:center">\(\frac{s}{(s+a)(s+b)}\)</td></tr><tr><td style="text-align:center">12</td><td style="text-align:center">\([1+\frac{1}{a-b}(be^{-bt}ae^{-at})]\)</td><td style="text-align:center">\(\frac{1}{s(s+a)(s+b)}\)</td></tr><tr><td style="text-align:center">13</td><td style="text-align:center">\(e^(-at)sin\omega t\)</td><td style="text-align:center">\(\frac{\omega}{(s+a)^2+\omega^2}\)</td></tr><tr><td style="text-align:center">14</td><td style="text-align:center">\(e^{-at}cos\omega t\)</td><td style="text-align:center">\(\frac{s+a}{(s+a)^2+\omega^2}\)</td></tr><tr><td style="text-align:center">15</td><td style="text-align:center">\(\frac{1}{a^2}(at-1+e^{-at})\)</td><td style="text-align:center">\(\frac{1}{s^2(s+a)}\)</td></tr><tr><td style="text-align:center">16</td><td style="text-align:center">\(\frac{\omega_n}{\sqrt{1-\xi^2}}e^{-\xi\omega_nt}sin\omega_n\sqrt{1-\xi^2}t\)</td><td style="text-align:center">\(\frac{\omega_n^2}{s^2+2\xi\omega_ns+\omega_n^2}\)</td></tr><tr><td style="text-align:center">17</td><td style="text-align:center">\(-\frac{1}{\sqrt{1-\xi^2}}e^{-\xi\omega_nt}sin(\omega_n\sqrt{1-\xi^2}t-\theta)\)<br>\(\theta=arctan\frac{\sqrt{1-\xi^2}}{\xi}\)</td><td style="text-align:center">\(\frac{s^2}{s^2+2\xi\omega_ns+\omega_n^2}\)</td></tr><tr><td style="text-align:center">18</td><td style="text-align:center">\(1-\frac{1}{\sqrt{1-\xi^2}}e^{-\xi\omega_nt}sin(\omega_n\sqrt{1-\xi^2}t-\theta)\)<br>\(\theta=arctan\frac{\sqrt{1-\xi^2}}{\xi}\)</td><td style="text-align:center">\(\frac{\omega_n^2}{s(s^2+2\xi\omega_ns+\omega_n^2)}\)</td></tr></tbody></table></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 专业 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 资料 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>[置顶]短消息电台📺</title>
       <link href="/2020/03/05/MiniBlog/"/>
       <url>/2020/03/05/MiniBlog/</url>

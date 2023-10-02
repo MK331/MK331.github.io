@@ -3,14 +3,14 @@
   <title>一个兔子洞</title>
   
   <subtitle>Step into my dreaming space</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://mk331.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://mk331.github.io/"/>
   <updated>2023-10-02T12:50:30.707Z</updated>
-  <id>http://example.com/</id>
+  <id>https://mk331.github.io/</id>
   
   <author>
-    <name>海猫之血</name>
+    <name>长耳朵Yagami</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>其一 · 关于我</title>
-    <link href="http://example.com/2023/10/02/1/"/>
-    <id>http://example.com/2023/10/02/1/</id>
+    <link href="https://mk331.github.io/1.html"/>
+    <id>https://mk331.github.io/1.html</id>
     <published>2023-10-02T00:00:00.000Z</published>
     <updated>2023-10-02T12:50:30.707Z</updated>
     
@@ -35,7 +35,7 @@
     
     
     
-    <category term="一百件事" scheme="http://example.com/tags/%E4%B8%80%E7%99%BE%E4%BB%B6%E4%BA%8B/"/>
+    <category term="一百件事" scheme="https://mk331.github.io/tags/%E4%B8%80%E7%99%BE%E4%BB%B6%E4%BA%8B/"/>
     
   </entry>
   
